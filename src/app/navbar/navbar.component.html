@@ -1,0 +1,7 @@
+<ul>
+  <li><img src="appicon.png" alt="App icon"></li>
+  <li class="{{isSelected('home')}} {{isHovered('home')}}" (click)="setActiveTab('home')" (mouseenter)="hover('home')"  (mouseleave)="unhover()">Home</li>
+  <li class="{{isSelected('privacy')}} {{isHovered('privacy')}}" (click)="setActiveTab('privacy')" (mouseenter)="hover('privacy')" (mouseleave)="unhover()">Privacy</li>
+  <li class="{{isSelected('support')}} {{isHovered('support')}}" (click)="setActiveTab('support')" (mouseenter)="hover('support')" (mouseleave)="unhover()">Support</li>
+</ul>
+

@@ -1,0 +1,19 @@
+<div class="app-container">
+
+  <app-navbar></app-navbar>
+
+  @if(activeTab==='home') {
+    <app-home class="cc"></app-home>
+  }
+  @if(activeTab==='privacy') {
+    <app-privacy class="cc"></app-privacy>
+  }
+  @if(activeTab==='support') {
+    <app-support class="cc"></app-support>
+  }
+
+  <div>
+    <p>&#169; 2023 Vladimir Cabacov</p>
+  </div>
+
+</div>

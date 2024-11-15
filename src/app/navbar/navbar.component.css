@@ -1,0 +1,30 @@
+ul {
+  background: lightslategray;
+  height: 60px;
+  display: flex;
+  list-style-type: none;
+  align-content: center;
+  padding: 0;
+}
+li {
+  height: 100%;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+}
+.selected {
+  background: white;
+}
+.hovered {
+  background: pink;
+}
+img {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+
+/*.center {*/
+/*  justify-content: center;*/
+/*}*/
