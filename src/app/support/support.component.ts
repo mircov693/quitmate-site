@@ -8,14 +8,12 @@ import {Component, OnInit} from '@angular/core';
   styleUrl: './support.component.css'
 })
 export class SupportComponent implements OnInit {
-
-  url: string = '/FAQ.json';
-  supportData:any = '{}';
+  supportData: { answers: [{ question: string, answer: string }] | [] } = { answers: [] };
 
   constructor() {}
 
   ngOnInit() {
-    fetch(this.url)
+    fetch('FAQ.json')
       .then(res => res.json())
       .then(json => {
         this.supportData = json;

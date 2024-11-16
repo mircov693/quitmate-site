@@ -1,4 +1,4 @@
-ul {
+nav {
   background: lightslategray;
   height: 60px;
   display: flex;
@@ -6,7 +6,7 @@ ul {
   align-content: center;
   padding: 0;
 }
-li {
+a {
   height: 100%;
   align-items: center;
   padding-right: 10px;
@@ -16,7 +16,7 @@ li {
 .selected {
   background: white;
 }
-.hovered {
+a.button:not(.selected):hover {
   background: pink;
 }
 img {
